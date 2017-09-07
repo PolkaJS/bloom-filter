@@ -1,6 +1,6 @@
 {
   "name": "@polkajs/bloom-filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create bloom filters using murmurhash3",
   "main": "lib/bloomfilter.js",
   "scripts": {
