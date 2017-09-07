@@ -1,7 +1,7 @@
 {
   "name": "@polkajs/bloom-filter",
   "version": "1.0.0",
-  "description": "When creating new modules, use this skeletal structure",
+  "description": "Create bloom filters using murmurhash3",
   "main": "lib/bloomfilter.js",
   "scripts": {
     "lint+build+test": "yarn run lint && yarn run build && yarn run test",
