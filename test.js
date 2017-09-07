@@ -4,7 +4,6 @@ let B = new bloom(16, 8);
 B.add("cat");
 B.add("parrot");
 B.add("Monkey");
-B.add("ESCALATOR");
 
 console.log(B);
 

@@ -20,13 +20,13 @@ export default class Bloom {
   }
 
   // join two bloom filters
-  extendBloom(a: Bloom, b: Bloom): Bloom {
-    let c = (a.bitmapBits > b.bitmapBits) ? b.bitmapBits : a.bitmapBits;
+  extendBloom(b: Bloom): Bloom {
+    let c = (this.bitmapBits > b.bitmapBits) ? b.bitmapBits : this.bitmapBits;
 
     for (let i = 0; i < c / 8; i++) {
-      a.bitmap[i] |= b.bitmap[i];
+      this.bitmap[i] |= b.bitmap[i];
     }
-    return a;
+    return this;
   }
 
   // litte endian encoded
