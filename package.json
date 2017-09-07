@@ -1,8 +1,8 @@
 {
-  "name": "@polkajs/skeleton-module",
-  "version": "1.0.4",
+  "name": "@polkajs/bloom-filter",
+  "version": "1.0.0",
   "description": "When creating new modules, use this skeletal structure",
-  "main": "index.js",
+  "main": "lib/bloomfilter.js",
   "scripts": {
     "lint+build+test": "yarn run lint && yarn run build && yarn run test",
     "lint": "echo linting... && eslint ./src/**/*.js && echo 'successfully linted'",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PolkaJS/skeleton-module.git"
+    "url": "git+https://github.com/PolkaJS/bloom-filter.git"
   },
   "author": "Craig OConnor",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PolkaJS/skeleton-module/issues"
+    "url": "https://github.com/PolkaJS/bloom-filter/issues"
   },
-  "homepage": "https://github.com/PolkaJS/skeleton-module#readme",
+  "homepage": "https://github.com/PolkaJS/bloom-filter#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
@@ -30,8 +30,10 @@
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.0.0",
     "flow-bin": "^0.48.0",
-    "random-words": "0.0.1",
-    "rlp": "^2.0.0",
     "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "bignumber.js": "^4.0.4",
+    "murmurhash3": "^0.4.0"
   }
 }
